@@ -1,0 +1,317 @@
+Python
+
+Introduction
+- General purpose programming language
+- High level programming language
+- Developed by Guido Van Rossum
+- Python developed in 1989 at National Research Institute in Netherland
+- Became public in Feb 20 1991
+- Simple and easy to understand
+- Concise code
+- Functional programming feature from C
+- Object programming language from C++
+- Scripting programming language from perl and shell script
+  - Exucutes code line by line, no concept of funions/methods
+- Modular programming language from modula-3
+  - Out dated 
+- Can be used to develop Desktop applications
+- Can be used to develop Web applications 
+- Can be used to develop games
+- Can be used for data analysis
+- Python is widely used in AI, ML,DL,NN,DS,IOT 
+
+Features
+
+- Simple and easy to learn
+  - Only 33 reserved words
+- Freeware and open source
+  - Maintained by Python Software Foundation
+- High level programming language
+  - Programmer friendly language
+- Platform independent
+  - Windows, Linux, Mac can run the same code
+  - WORA
+  - Python virtual machine helps to achieve this feature
+- Portable
+- Dynamically typped
+- Procedure oriented and object oriented language
+- Extensible
+  - Using non python code 
+- Embedded
+  - Using python code in non python language
+- Extensive library
+
+Limitations 
+
+- Mobile applications
+- Enterprise application
+  - Banking application
+  - Telecom applications
+- Permance is low
+
+Python Idenfifier
+
+- A name in python programming language is called identifier
+- Name can be class name, variable name or method name.
+- Identifier can contain a-z, A-Z, 0-9 or _.
+- Identifier cannot start with digit . i.e 123total is invalid while total123 is valid
+- Identifiers are case sensitive.
+- Reserved words cannot be used as identifier
+- No length limit for identifiers but not recommended to use lengthy identifier names
+
+Reserved words/Key words
+- Contains only 35 keywords
+  
+  - 'False', 'None', 'True', 'and', 'as', 
+  - 'assert', 'async', 'await', 'break', 'class', 
+  - 'continue', 'def', 'del', 'elif', 'else', 
+  - 'except', 'finally', 'for', 'from', 'global', 
+  - 'if', 'import', 'in', 'is', 'lambda',
+  - 'nonlocal', 'not', 'or', 'pass', 'raise',
+  - 'return', 'try', 'while', 'with', 'yield'
+
+Data Types
+- There are 14 in builtin data types
+- int,float,complex,bool,str, list,tuple,set,fronzenset, dict, bytes,bytearray,range,None
+- There is no concept of primitive type in python as everthing is an object.
+- int
+  - can be respresented in 4 ways
+    - deicmal form(base-10)
+      - allowed numbers 0-9
+      - a=15
+    - binary form(base-2) 
+      - allowed numbers 0 and 1
+      - a=0b1111 or 0B1111
+    - octal form(base-8) 
+      - allowed numbers 0-7
+      - a=0o1111 or 0O1111
+    - hexadeicmal form(base-16)
+      - allowed numbers 0-9,A-F
+      a=0Xface or a=OxFACE (case insensitive in this case)
+
+  - float
+    - a=1.5
+    - cab be represented in only decimal form
+    - a=1.5e3 => 1.5X1000=1500.0
+
+  - complex
+    - is represented as a+bj
+    - x = a+bj
+  
+  - bool
+    -only allowed values are True or False
+
+  - str 
+    - any sequence of characters
+    - can use either single quotes or double quotes
+    - s='test' or s="test"
+    - triple quotes
+      - applicable for multiline string literal
+        - '''test
+          test test '''
+      - applicable for using both single and double quotes in a string
+        - s='''Classes by "Joash" are 'great' '''
+      - applicable for doc string
+  - slice operator
+    - a='test'
+    - a[startindex:endindex] ; endindex= end-1
+    - + works as concatenation operator for string
+    - * works as repeatation operator
+  
+
+- Objects are immutable
+- Changes on created object creates new object
+
+list
+  - Represented by []
+  - Order is preserved
+  - Duplicate values are allowed
+  - Heterogenous object 
+  - Indexing and slicing allowed
+  - Growable in nature
+  - Mutable
+  - important methods for list 
+    - len, count, index, append(inserts at the end),insert(inserts at specified location), extend(joining multiple lists),remove(removes element at given index),pop(removes and return last element), clear(removes all elements),reverse ,sort(needs same data type) 
+
+tuple
+  - Represented by ()
+  - Order is preserved
+  - Duplicate values are allowed
+  - Heterogenous object 
+  - Indexing and slicing allowed
+  - Immutable
+  - Adding or removing activity not allowed
+  - Single value in tuple should end with , i.e (10) is not tuple but (10,) is tuple
+
+Set 
+  - Order is not preseved
+  - Represented by {}
+  - Duplicate values are not allowed
+  - Indexing and slcicing concept does not apply
+  - Heterogenous elements allowed
+  - Growable in nature
+  - Immutable
+  - {} , there is no concept of empty set but it is called empty dictionary
+
+Frozenset
+  - Immutable set
+
+Dict
+  - Represented as key value pairs
+  - Order is not preserved.
+  - Duplicate keys not allowed but not values
+
+Range
+- Gives range of int values 
+-range(n),range(start,end), range(start,end,increment by) are different forms
+
+byte
+  - Can represent only 0 to 255
+  - Immutable 
+
+bytearray
+  - Represents o to 155
+  - Mutable
+
+None 
+  - No value associated.
+
+Escape characters 
+  - \n - new line
+  - \k - Horizontal tab
+  - \r - Carriage return
+  - \b - Backspace
+  - \f - form feed
+  - \' - Single quote
+  - \" - double   quote
+  - \\ - backslash
+  
+Comments
+  - # - single line commment
+  - No concept of multiline comment 
+
+Constant
+  - No concept of constant  
+  - Uppercase letters are used to represent PYTHON_CONSTANT, it can be still changed
+
+============================================================================================
+
+Operators
+
+  - Arithmetic 
+    - + : Addition # use as string concatenation operator as well but adjacent arguments should be string
+    - - : Substraction
+    - * : Multiplication
+    - / : Division # returns float value
+    - % : Modulo
+    - //: Floor Division
+    - **: Exponent/ Power
+    
+  - Relational 
+    - >
+    - >=
+    - <
+    - <=
+    - relational operators can be used in string and boolean as well, strings are compare inaccordance with its unicode value 
+  
+  - Equality 
+    - !=
+    - == #content comparision
+    
+  - Logical
+    - and 
+    - or 
+    - not 
+
+  - Bitwise
+    - & : if both bits are 1 then 1 otherowise 0
+    - | : if atleast one bit is 1 then 1 else 0
+    - ^ : if both bits are different then 1 else 0
+    - ~ : if 1 then 0 and vice-versa
+    - <<: left shift
+    - >>: right shift
+    - only applicable for int and boolean 
+
+  - Assignment
+    - =  
+    #compund aissgnement operator
+    - *=
+    - /=
+    - += 
+    - -=
+    - %=
+    - //=
+    - **=
+    - &=
+    - |=
+    - ^=
+    - >>=
+    - <<=
+    - increment/decrement operator not available in python
+    - ++x is not increment but treated as +(+x)
+
+  - Ternary 
+    - ternary operator syntax is different
+    - trueValue condition falseValue .i.e x=30 if 10<20 else 40
+
+  - Input/Output
+
+    - Every inout is string type
+    
+  - Special
+    - Identity
+      -is, is not
+      - a =10
+      - b=10
+      - both refreneces same address 
+      - is operator always compares the address while == compares the content
+      - a is b
+    - Membership 
+      - in, not in
+
+Operator precedence
+  - () : parenthesis
+  - ** : exponential
+  - ~,-: uniary 
+  - *,/,%,//
+  - +,-
+  - <<,>>
+  - &
+  - ^
+  - |
+  - >,>=,<,<=,==,!=
+  - =,+=,-=,*=,...
+  - is,is not,
+  - in,not in
+  - not
+  - and 
+  - or
+============================================================================================================
+
+Command Line Arguments
+  - argv
+  - list type
+  - available in sys module
+============================================================================================================
+
+Statements
+
+  Selection  
+
+    - if, if-else, if-elif-else
+
+  Iterative 
+    - for, while
+
+  Transfer  
+    - break, continue, pass
+  
+==========================================================================================================
+
+
+
+
+
+
+
+
